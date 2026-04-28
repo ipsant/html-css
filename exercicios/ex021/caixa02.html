@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tag</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header {
+            background-color: blue;
+            padding: 5px 0px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            border-radius: 5px;
+            text-align: left;
+            background-color: lightblue;
+            margin: 0px 5px;
+            padding: 5px 0px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            margin: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: blue;
+            transition: 0.5s;
+        }
+
+        nav a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        main {
+            border-radius: 10px 25px;
+            margin: 0px 10px;
+            padding: 10px;
+            background-color: red;
+            color: white;
+        }
+
+        .assuntos {
+            color: white;
+        }
+
+        .assuntos h2 {
+            text-align: center;
+        }
+
+        .noticias {
+            border-radius: 5px 20px;
+            background-color: darkred;
+            margin: 10px 10px;
+            padding: 5px 20px;
+        }
+
+        .noticias p {
+            text-align: justify;
+        }
+
+        .noticias aside p {
+            text-align: center;
+            color: rgb(255, 90, 90);
+            font-size: .8em;
+        }
+
+        footer {
+            color: lightgrey;
+            text-align: center;
+            background-color: black;
+            margin: 10px auto;
+            padding: 5px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Uma <div> é uma caixa do tipo box-level 
+    Uma <span> é uma caixa do tipo inline-level-->
+    <!-- O header é o cabeçalho na organização semântica -->
+    <header>  
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <!-- O main é o conteúdo principal do site -->
+    <main>
+
+        <!-- Section= seção do site para conteúdos do mesmo assunto/temática-->
+        
+        <section class="assuntos">
+            <article>
+                <h2>Exercício sobre Grouping Tag, Caixas, Sombras e bordas</h2>
+            </article>
+        </section>
+        <section class="noticias">
+            <!-- article = tag para artigos -->
+            <article>
+                <h3>Notícia 01</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi et molestias voluptas magnam eaque sunt, tempore officia alias ipsum illum mollitia nam, earum eius adipisci error aperiam labore, quaerat distinctio!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, reprehenderit nisi ratione omnis tempore eius culpa! Inventore vel excepturi, quaerat ut dolores officia sed animi odit eum eaque? Vel, minima.</p>
+                <!-- aside - conteúdo relativo ao article -->
+                <aside>
+                    <p>Artigo escrito por Ítalo Prado</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <!-- O footer é o rodapé do site -->
+    <footer>
+        <p>Desenvolvido por Ítalo Prado</p>
+    </footer>
+    
+    
+</body>
+</html>

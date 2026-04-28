@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+    <style>
+        img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Esta é uma imagem "flexível" que irá se adaptar a proporção do seu navegador/celular.</p>
+    <p><b>Observação:</b> Use a tag <code>source media type</code>. Porém ela vem por padrão em <code>min-width</code>. O ideal é alterar para <code>max-width</code>.</p>
+    <picture>
+        <img src="imagens/paisagem-g.png" alt="imagem flexível">
+    </picture>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover {
+            background-color: red;
+            color: white;
+            width: max-content;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Testando exemplos de hover</h1>
+    <p>
+        Passe o mouse sobre o texto abaixo:
+    </p>
+
+    <div>
+        Passe o mouse aqui (hover)
+        <p>Texto oculto usando <code>div:hover > p</code></p>
+    </div>
+    <p>Fim do exemplo.</p>
+
+        <!-- Quando eu uso div:hover é para colocar uma animação visual ao passar o mouse em cima da tag informada. -->
+</body>
+</html>
