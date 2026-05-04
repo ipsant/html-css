@@ -7,19 +7,38 @@
 </head>
 <style>
     body {
-        background-color: gray;
-
+        height: 100vh;
+        
+        /*
+        background-color: red;
         background-image: url(imagens/wallpaper002.jpg);
         background-position: center;
-        background-repeat: repeat;
-        background-size: cover; /**O cover vai cobrir toda a área disponível, mesmo que isso signifique cortar parte da imagem. O contain vai ajustar a imagem para caber dentro da área disponível, sem cortar nada, mas pode deixar espaços vazios se as proporções da imagem e da área forem diferentes.**/
+        background-repeat: no-repeat;
+        */
+        
+        /*
+        background-attachment: fixed; 
+        O scroll faz com que a imagem de fundo role junto com a página, enquanto o fixed deixa a imagém de fundo estática
+        */
 
-        height: 100vh;
+        background: red url(imagens/wallpaper002.jpg) center no-repeat fixed; 
+        /* 
+        shorthand - background
+        color > image > position > repeat > [size] > attachment 
+        */
+
+        background-size: cover; 
+        /*
+        O cover vai cobrir toda a área disponível, mesmo que isso signifique cortar parte da imagem. O contain vai ajustar a imagem para caber dentro da área disponível, sem cortar nada, mas pode deixar espaços vazios se as proporções da imagem e da área forem diferentes.
+        */
+        
+        
+        
     }
 
     main {
         background-color: rgba(255, 255, 255, 0.85);
-        width: 600px;
+        max-width: 600px;
         padding: 10px;
         margin: auto;
 
