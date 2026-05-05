@@ -19,6 +19,11 @@
     --cor04: #9f5557;
 }
 
+body {
+    background-color: var(--cor01);
+    min-height: 100vh;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -27,15 +32,55 @@ header {
     padding: 30px 20px;
     align-items: center;
     min-height: 15vh;
-    margin-bottom: 20px;
+    border-bottom: solid 5px var(--cor04);
 }
 
 #logo {
     font-family: var(--font-logo);
-    font-size: 6vh;
+    font-size: 6vw;
 }
 
 header p {
     font-family: var(--font-text);
-    font-size: 2vh;
+    font-size: 2vw;
+    color: var(--cor01);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor04);
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section p {
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    font-family: var(--font-text-cordel);
+    font-size: 4vw;
+    font-weight: 600;
+    padding-left: 20px;
+    line-height: 1.5em;
+}
+
+section.normal {
+    background-color: var(--cor03);
+    color: var(--cor02);
+}
+
+section.image {
+    background-color: var(--cor04);
+    color: var(--cor01);
+}
+
+footer{
+    background-color: var(--cor02);
+    color: var(--cor01);
+    text-align: center;
+    padding: 5px;
+    font-family: var(--font-text);
 }
