@@ -81,8 +81,7 @@ section.image {
     padding-bottom: 2em;
     box-shadow: inset 1px 9px 10px 0px rgba(0, 0, 0, 0.5);
     background-size: cover;
-    background-attachment: fixed;ck
-
+    background-attachment: fixed;
 }
 
 section.image p {
