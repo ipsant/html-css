@@ -37,7 +37,7 @@ header {
 
 #logo {
     font-family: var(--font-logo);
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 header p {
@@ -61,7 +61,7 @@ section {
     padding-bottom: 10vh;
     padding-top: 10vh;
     font-family: var(--font-text-cordel);
-    font-size: 4vw;
+    font-size: 2em;
     font-weight: 600;
     padding-left: 20px;
     line-height: 2em;
@@ -90,5 +90,5 @@ footer{
     text-align: center;
     padding: 5px;
     font-family: var(--font-text);
-    font-size: .8em;
+    font-size: .7em;
 }
