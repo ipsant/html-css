@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        thead th {
+            border: 1px solid black;
+            text-align: center;
+            background-color: gray;
+            color: white;
+        }
+        tbody td {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <hr>
+    <table>
+        <caption>Teste de mesclagem de células</caption>
+
+        <thead>
+            <tr>
+                <th>Coluna 1</th>
+                <th>COluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">A</td>
+                <td rowspan="2">C</td>
+            </tr>
+            <tr>
+                <td rowspan="3">D</td>
+                <td>E</td>
+                
+            </tr>
+            <tr>
+                
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                
+                <td>K</td>
+                <td>L</td>
+            </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
